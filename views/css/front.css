@@ -1,0 +1,27 @@
+div.trexles
+{
+   margin-left: 2rem;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: none;
+    display: block;
+    line-height: 23px;
+    color: #333;
+    letter-spacing: -1px;
+    position: relative;
+   background-color: #f9f9f9;
+}
+
+
+#trexle-form {}
+#trexle-form label { display: inline-block; margin-bottom: 4px; text-transform: uppercase; }
+#trexle-form label.lowercase { text-transform: none; }
+#trexle-form input[type="text"], #trexle-form select { border: #CCCCCC solid 1px; margin-bottom: 15px; padding: 3px; }
+#trexle-form input[type="checkbox"] { margin-bottom: 15px; }
+#trexle-form input.card-number { width: 210px; }
+#trexle-form span.cvn-info { color: gray; }
+
+.trexle-payment-logos {
+  margin-bottom: 20px;
+}
