@@ -560,7 +560,7 @@ class trexle_transaction
 		}
 
 		//Send request
-		$response = $this->sendRequestPost($this->endPointUrl . '/1/charges', $fields);
+		$response = $this->sendRequestPost($this->endPointUrl . '/api/v1/charges', $fields);
 
 
 		//Remove the request from memory
