@@ -15,8 +15,8 @@ define('TREXLE_MODE_TEST',			 0);
 define('TREXLE_MODE_LIVE',			 1);
 
 /* Server URLs */
-define('TREXLE_URL_TEST', 			'https://sanbox.trexle.com');
-define('TREXLE_URL_LIVE', 			'https://sanbox.trexle.com');
+define('TREXLE_URL_TEST', 			'https://core.trexle.com');
+define('TREXLE_URL_LIVE', 			'https://sandbox.trexle.com');
 
 /* Transaction types. */
 define('TREXLE_TXN_CHARGE',		  0);
