@@ -155,9 +155,9 @@ class TrexleValidationModuleFrontController extends ModuleFrontController
 			if ($txn_type == 'TREXLE_TXN_PREAUTH')
 				$auth_only = $this->module->l('Auth Only');
 
-			$message = $auth_only.' '.$this->module->l('Pin Payments Receipt No: ').$result['transactionid'].$this->module->l(' - Last 4 digits of the card: ').substr(Tools::getValue('cc_number'), -4);
+			$message = $auth_only.' '.$this->module->l('Trexle Receipt No: ').$result['transactionid'].$this->module->l(' - Last 4 digits of the card: ').substr(Tools::getValue('cc_number'), -4);
 
-			$this->module->validateOrder($cart->id, $order_status, $total, $this->module->l('Pin Payments'), $message, array('transaction_id' => $result['transactionid']), (int)$this->context->currency->id, false, $customer->secure_key);
+			$this->module->validateOrder($cart->id, $order_status, $total, $this->module->l('Trexle'), $message, array('transaction_id' => $result['transactionid']), (int)$this->context->currency->id, false, $customer->secure_key);
 
 			Tools::redirect('index.php?controller=order-confirmation&id_cart='.$cart->id.'&id_module='.$this->module->id.'&id_order='.$this->module->currentOrder.'&key='.$customer->secure_key);
 
